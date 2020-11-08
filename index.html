@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body,
+        .container {
+            background-color: black;
+            height: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            background: linear-gradient(to right, rgb(167, 81, 81), rgb(58, 126, 58));
+            background-clip: text;
+            /*will only be applied to text*/
+            -webkit-background-clip: text;
+            color: transparent;
+            /*without this its color is black*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #prr {
+            color: black;
+            text-align: center;
+            word-spacing: 5px;
+            margin-top: 50px;
+            font-size: 30px;
+            text-shadow: 0 0px 2px lime;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <pre class="center" id="d"></pre>
+    </div>
+    <div id="prr">
+        HOW IS THAT FOR PRESTIGIOUS
+    </div>
+
+    <script src="src.js"></script>
+</body>
+
+</html>
